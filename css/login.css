@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(rgb(2, 2, 2), rgb(23, 23, 23));
+}
+
+.login-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.login_header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.juju-icon {
+    width: 250px;
+    margin-bottom: -35px;
+}
+
+.brain-icon {
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.login_header h1 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.login_imput {
+    border: 2px solid #333;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 15px;
+    max-width: 300px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.login_button {
+    background-color: #ee665c;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 300px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.login_button:disabled {
+    background-color: #eee;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1em;
+    max-width: 300px;
+    padding: 15px;
+    width: 100%;
+}
