@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(rgb(2, 2, 2), rgb(23, 23, 23));
+    background: linear-gradient(rgb(23, 23, 23), rgb(2, 2, 2));
+    /* background: linear-gradient(rgb(23, 23, 23), rgb(139, 0, 0));*/
 }
 
 .login-form {
@@ -24,6 +25,7 @@ body {
 }
 
 .brain-icon {
+    background-color: rgb(184, 184, 184);
     width: 250px;
     margin-bottom: 15px;
     border-radius: 8px;
