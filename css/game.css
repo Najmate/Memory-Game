@@ -13,7 +13,8 @@
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+        grid-template-columns: repeat(7, minmax(10vw, 1fr));
+        /* Modificação aqui */
         gap: 15px;
         width: 100%;
         max-width: 1200px;
@@ -52,6 +53,7 @@
         aspect-ratio: 1/1;
     }
 }
+
 
 main {
     background: linear-gradient(rgb(23, 23, 23), rgb(3, 3, 3));
