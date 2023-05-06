@@ -1,19 +1,66 @@
-body {
-    zoom: 0.85;
-    background: linear-gradient(rgb(23, 23, 23), rgb(3, 3, 3));
+/* Estilos para telas de computador */
+@media only screen and (min-width: 768px) {
+    body {
+        zoom: 0.85;
+    }
 
+    header {
+        font-size: 1.2em;
+        max-width: 800px;
+        padding: 30px;
+        margin: 0 0 30px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+        gap: 15px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card {
+        aspect-ratio: 3/4;
+    }
+}
+
+/* Estilos para telas de celular */
+@media only screen and (max-width: 767px) {
+    body {
+        zoom: 1;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header {
+        font-size: 1em;
+        max-width: none;
+        padding: 15px;
+        margin: 0 0 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    .card {
+        aspect-ratio: 1/1;
+    }
 }
 
 main {
     background: linear-gradient(rgb(23, 23, 23), rgb(3, 3, 3));
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-size: cover;
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
-    padding: 20px 20px 50px;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 header {
@@ -21,31 +68,22 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.8);
-    font-size: 1.2em;
     width: 100%;
-    max-width: 800px;
-    padding: 30px;
-    margin: 0 0 30px;
     border-radius: 5px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 15px;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 .card {
-    aspect-ratio: 3/4;
     width: 100%;
     border-radius: 5px;
     position: relative;
     transition: all 400ms ease;
     transform-style: preserve-3d;
-
 }
 
 .face {
@@ -62,7 +100,6 @@ header {
 
 .front {
     transform: rotateY(180deg);
-
 }
 
 .back {
