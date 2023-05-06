@@ -92,16 +92,27 @@ const createCard = (character) => {
 }
 
 const loadGame = () => {
-
     const duplicateCharacters = [...characters, ...characters];
-
     const shuffledArray = duplicateCharacters.sort(() => Math.random() - 0.5);
 
     shuffledArray.forEach((character) => {
         const card = createCard(character);
         grid.appendChild(card);
     });
-}
+    grid.querySelectorAll('.card').forEach((card) => {
+        card.classList.add('reveal-card');
+    });
+
+    // Adiciona a classe 'reveal-card' a todas as cartas após serem criadas
+    setTimeout(() => {
+        canPlay = true;
+        grid.querySelectorAll('.card').forEach((card) => {
+            card.classList.remove('reveal-card');
+        });
+        startTimer();
+        isGameStarted = true;
+    }, 1000);
+};
 
 const starTimer = () => {
 
