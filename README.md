@@ -7,8 +7,8 @@ O jogo da memória é um clássico jogo de cartas que consiste em encontrar pare
 <p>Conforme eu for aprendendo mais sobre desenvolvimento de jogos, irei implementar novas funcionalidades neste projeto.</p>
 <p>Metas futuras:</p>
 <ul>
-  <li>Torná-lo 100% responsivo em celulares</li>
+  <li>Torná-lo 100% responsivo em celulares.</li>
   <li>Adicionar mais personagens e níveis de dificuldade.</li>
-  <li>Criar uma tabela de ranking dos 10 melhores jogadores</li>
-  <li>Criar um modo onde possa competir com amigos</li>
+  <li>Criar uma tabela de ranking dos 10 melhores jogadores.</li>
+  <li>Criar um modo onde possa competir com amigos.</li>
 </ul>
